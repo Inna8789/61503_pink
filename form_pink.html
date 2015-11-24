@@ -14,6 +14,329 @@
 
     <body>
         <div class="wrapper">
+
+            <header class="main_header">
+
+                <nav class="nav">
+
+                    <button type="button" class="menu_btn menu_btn--close"></button>
+                    <button type="button" class="menu_btn js-openMenu"></button>
+
+                    <ul>
+                        <li class="logo_block">
+                            <img src="XXX" alt="" class="logo_img">
+                            <img src="XXX" alt="" class="logo_name">
+                        </li>
+                        <li class="nav__item"><a href="#">Информация</a></li>
+                        <li class="nav__item"><a href="#">Блог</a></li>
+                        <li class="nav__item"><a href="#">Отзывы</a></li>
+                        <li class="nav__item"><a href="#">Конкурс</a></li>
+                    </ul>
+
+                </nav>
+
+            </header>
+
+            <main class="form_content">
+
+                <div class="promo_form">
+                
+                    <div class="promo_form__background">
+                        <picture>
+                            <source
+                                media="(min-width: 320px)"
+                                    srcset="img/photos/photo-XXX@2x.jpg 2x,
+                                            img/photos/photo-XXX@1x.jpg">
+                            <source
+                                media="(min-width: 640px)"
+                                    srcset="img/photos/photo-XXX@2x.jpg 2x,
+                                            img/photos/photo-XXX@1x.jpg">
+                            <source
+                                media="(min-width: 1024px)"
+                                    srcset="img/photos/photo-XXX@2x.jpg 2x,
+                                            img/photos/photo-XXX@1x.jpg">        
+                            <img src="img/photos/photo-XXX@1x.jpg">
+                        </picture>
+                    </div>
+
+                    <h2 class="promo_form__title">Конкурс на самое безбашенное путешествие с Pink</h2>
+
+                </div>
+
+                <div class="form_header">
+
+                    <p class="form_header__text">
+                        Поделитесь своей историей и&nbsp;получите шанс выиграть ценный приз&nbsp;&mdash; 1000&nbsp;миль на&nbsp;вашу бонусную карту! Пожалуйста, заполните форму ниже:
+                    </p>
+
+                </div>
+
+                <form class="form" action="/echo>" method="post">
+                 
+                    <fieldset class="fieldset">
+                        
+                        <div class="fieldset__items">
+                            
+                            <div class="fieldset__item">
+                                <label class="fieldset__label">Имя<span>*</span></label>
+                                <input class="fieldset__field" type="text" value="Введите ваше имя" required>
+                            </div>
+                            <div class="fieldset__item">
+                                <label class="fieldset__label">Фамилия<span>*</span></label>
+                                <input class="fieldset__field" type="text" value="Укажите фамилию" required>
+                            </div>
+                            <div class="fieldset__item">
+                                <label class="fieldset__label">Отчество</label>
+                                <input class="fieldset__field" type="text" value="Ну и отчество тоже">
+                            </div>
+
+                        </div>
+
+                    </fieldset>
+
+                    <fieldset class="fieldset_radio">
+                        
+                        <legend class="fieldset_radio__legend">
+                          С каким приложением путешествовали?<span>*</span>  
+                        </legend>
+
+                         <ul class="fieldset_radio__filter">
+                            <li>
+                                <input class="fieldset_radio__button" id="ios" name="application" type="radio" checked>
+                                <label class="fieldset_radio__label" for="ios">Скорее положительное</label>
+                            </li>
+                            <li>
+                                <input class="fieldset_radio__button" id="android" name="application" type="radio">
+                                <label class="fieldset_radio__label" for="android">Скорее отрицательное</label>
+                            </li>
+                            <li>
+                                <input class="fieldset_radio__button" id="windows" name="application" type="radio">
+                                <label class="fieldset_radio__label" for="windows">Скорее отрицательное</label>
+                            </li>
+                        </ul>
+
+                    </fieldset>
+
+                    <fieldset class="fieldset">
+                        
+                        <legend class="fieldset__legend">
+                            Когда вы путешествовали?<span>*</span>
+                        </legend>
+
+                        <input class="fieldset__field" type="text" value="1 апреля 2015">
+                        <label class="fieldset__label">Дата выезда</label>
+
+                        <div class="fieldset__triple">
+                            <button class="fieldset__field--btn_minus" type="button"><i class="icon-minus"></i></button>
+                            <input class="fieldset__field--number" type="number" value="10 дней" required>
+                            <button class="fieldset__field--btn_plus" type="button"><i class="icon-plus"></i></button>    
+                        </div>
+                        <label class="fieldset__label">Продолжительность:</label>
+
+                        <input class="fieldset__field" type="text" value="10 апреля 2015">
+                        <label class="fieldset__label">Дата возвращения</label>
+
+                    </fieldset>
+
+                    <fieldset class="fieldset">
+                     
+                        <legend class="fieldset__legend">
+                            Количество попутчиков<span>*</span>
+                        </legend>
+    
+                        <div class="fieldset__triple">
+                            <button class="fieldset__field--btn_minus" type="button"><i class="icon-minus"></i></button>
+                            <input class="fieldset__field--number" type="number" value="2 человека" required>
+                            <button class="fieldset__field--btn_plus" type="button"><i class="icon-plus"></i></button>    
+                        </div>
+    
+                        <label class="fieldset__label--double">№</label>
+                        <label class="fieldset__label--double">Имя<span>*</span></label>
+                        <input class="fieldset__field_number--double disabled" type="number" value="1">
+                        <input class="fieldset__field--double" type="text" value="Введите ваше имя">
+    
+                        <label class="fieldset__label--special">Прозвище:</label>
+                        <input class="fieldset__field--special" type="text" value="Ну как же без этого!">
+    
+                        <label class="fieldset__label--double">№</label>
+                        <label class="fieldset__label--double">Имя<span>*</span></label>
+                        <input class="fieldset__field_number--double disabled" type="number" value="2">
+                        <input class="fieldset__field--double" type="text" value="Введите ваше имя">
+    
+                        <label class="fieldset__label--special">Прозвище:</label>
+                        <input class="fieldset__field--special" type="text" value="Ну как же без этого!">
+
+                    </fieldset>
+                    
+                    <fieldset class="fieldset_check">
+                        
+                        <legend class="fieldset_check__legend">
+                            Ваши безбашенные достижения в путешествии   
+                        </legend>
+
+                        <ul class="fieldset_check__filter">
+                            <li>
+                                <input class="fieldset_check__field" id="achievment_one" type="checkbox" checked>
+                                <label class="fieldset_check__label" for="achievment_one">Сделал селфи с акулой</label>  
+                            </li>
+                            <li>
+                                <input class="fieldset_check__field" id="achievment_two" type="checkbox" checked>
+                                <label class="fieldset_check__label" for="achievment_two">Обгорел на пляже</label>  
+                            </li>
+                            <li>
+                                <input class="fieldset_check__field" id="achievment_three" type="checkbox">
+                                <label class="fieldset_check__label" for="achievment_three">Видел Чака Норриса</label>  
+                            </li>
+                            <li>
+                                <input class="fieldset_check__field" id="achievment_four" type="checkbox">
+                                <label class="fieldset_check__label" for="achievment_four">Накупил сувениров</label>  
+                            </li>
+                            <li>
+                                <input class="fieldset_check__field" id="achievment_five" type="checkbox" checked>
+                                <label class="fieldset_check__label" for="achievment_five">Удержал башню</label>  
+                            </li>
+                            <li>
+                                <input class="fieldset_check__field" id="achievment_six" type="checkbox">
+                                <label class="fieldset_check__label" for="achievment_six">Разгромил отель</label>  
+                            </li>
+                        </ul>
+
+                    </fieldset>
+
+                    <fieldset class="fieldset_load">
+                        
+                        <legend class="fieldset_load__legend">
+                            Ваши фотографии из поездки<span>*</span>
+                        </legend>
+
+                        <label class="fieldset_load__btn" for="fileupload">
+                            Загрузить фото
+                        </label>
+
+                        <input type="file" name="file" id="fileupload" multiple class="fieldset_load__file" style="display: block;">
+
+                        <ul class="photouploadList">
+
+                            <li class="photouploadList__item">
+                                <div class="photouploadList__preview--wrap">
+                                    <img class="photouploadList__preview" src="img/photos/img-1.jpg" name="photo" alt="" title="">
+                                </div> 
+                                <div class="photouploadList__title">IMG-1.JPG</div>
+
+                                <button class="photouploadList__btnDelete"></button>
+                            </li>
+
+                            <li class="photouploadList__item">
+                                <div class="photouploadList__preview--wrap">
+                                    <img class="photouploadList__preview" src="img/photos/img-2.jpg" name="photo" alt="" title="">
+                                </div> 
+                                <div class="photouploadList__title">IMG-2.JPG</div>
+
+                                <button class="photouploadList__btnDelete"></button>
+                            </li>
+
+                            <li class="photouploadList__item">
+                                <div class="photouploadList__preview--wrap">
+                                    <img class="photouploadList__preview" src="img/photos/img-3.jpg" name="photo" alt="" title="">
+                                </div> 
+                                <div class="photouploadList__title">IMG-3.JPG</div>
+
+                                <button class="photouploadList__btnDelete"></button>
+                            </li>
+
+                            <li class="photouploadList__item">
+                                <div class="photouploadList__preview--wrap">
+                                    <img class="photouploadList__preview" src="img/photos/img-4.jpg" name="photo" alt="" title="">
+                                </div> 
+                                <div class="photouploadList__title">IMG-4.JPG</div>
+
+                                <button class="photouploadList__btnDelete"></button>
+                            </li>
+
+                            <li class="photouploadList__item">
+                                <div class="photouploadList__preview--wrap">
+                                    <img class="photouploadList__preview" src="img/photos/img-5.jpg" name="photo" alt="" title="">
+                                </div> 
+                                <div class="photouploadList__title">IMG-5.JPG</div>
+
+                                <button class="photouploadList__btnDelete"></button>
+                            </li>
+
+                            <li class="photouploadList__item">
+                                <div class="photouploadList__preview--wrap">
+                                    <img class="photouploadList__preview" src="img/photos/img-6.jpg" name="photo" alt="" title="">
+                                </div> 
+                                <div class="photouploadList__title">IMG-6.JPG</div>
+
+                                <button class="photouploadList__btnDelete"></button>
+                            </li>
+
+                            <li class="photouploadList__item">
+                                <div class="photouploadList__preview--wrap">
+                                    <img class="photouploadList__preview" src="img/photos/img7-.jpg" name="photo" alt="" title="">
+                                </div> 
+                                <div class="photouploadList__title">IMG-7.JPG</div>
+
+                                <button class="photouploadList__btnDelete"></button>
+                            </li>
+
+                            <li class="photouploadList__item">
+                                <div class="photouploadList__preview--wrap">
+                                    <img class="photouploadList__preview" src="img/photos/img-8.jpg" name="photo" alt="" title="">
+                                </div> 
+                                <div class="photouploadList__title">IMG-8.JPG</div>
+
+                                <button class="photouploadList__btnDelete"></button>
+                            </li>
+
+                        </ul>
+
+                    </fieldset>
+
+                    <input type="submit" class="btn btn--green" value="Отправить отзыв">
+
+                    <div class="fieldset__label--note">
+                        <span>*</span>&mdash;&nbsp;Обязательные поля
+                    </div>
+
+                    <div class="popup modal">
+
+                        <h2 class="popup__title">Что-то пошло<br> не так!</h2>
+                        <p>Проверьте поля, выделенные красным, скорее всего, вы забыли их заполнить.</p>
+                        <button class="btn btn--green btn--sm" type="button">ok</button>
+                    </div>
+
+                    <div class="popup popup--success modal">
+                        <h2 class="popup__title">Ваша заявка отправлена!</h2>
+                        <p>Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим её и оповестим вас.</p>
+                        <div class="popup__footer">
+                            <button class="btn btn--blue" type="button">Закрыть окно</button>
+                        </div>
+                    </div>
+
+                </form>
+
+            </main>
+
+            <footer class="main_footer">
+                <div class="logo_block">
+                    <img src="XXX" alt="" class="logo_img">
+                    <img src="XXX" alt="" class="logo_name">
+                </div>
+
+                <div class="social">
+                    <a href="#" class="social__btn social__btn--twitter">Twitter</a>
+                    <a href="#" class="social__btn social__btn--facebook">Facebook</a>
+                    <a href="#" class="social__btn social__btn--youtube">Youtube</a>
+                </div>
+
+                <div class="copyright">
+                    Разработано 
+                    <a class="copyright__htmlacademy" href="http://htmlacademy.ru" target="_blank">HTML Academy</a>
+                </div>
+            
+            </footer>
+
         </div>
     </body>
 </html>
